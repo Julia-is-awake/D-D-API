@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amethysta';
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('imagens/papel\ rasgado.png'), url('imagens/cenário\ de\ fundo.png'), #34312F;
+    background-size: auto, auto calc(130vh + 200px);
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 100vh, 0 -150px;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10%;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+.input_search {
+    border: none;
+    height: 40px;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #AAAAAA;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.usuario {
+    opacity: 0.5;
+    filter: invert(100);
+}
+
+#loading {
+    color: white;
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+hr {
+    border-style: none;
+    height: 5px;
+    background-image: linear-gradient(to right, #A02323 60%, rgba(0, 0, 0, 0));
+    /* background-color: #A02323; */
+    margin: 10px 0;
+}
+
+.negrito {
+    font-weight: 800;
+}
+
+.atributos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.7;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+    color: #580405;
+    margin: auto;
+    padding: 1.5rem;
+    width: 80%;
+    box-shadow: 0 0 0 1.5 rgba(0, 0, 0, 0.5);
+    border-image-slice: 10 10 10 10;
+    border-image-width: 10px 10px 10px 10px;
+    border-image-outset: 5px 5px 5px 5px;
+    border-image-repeat: round round;
+    border-image-source: url('imagens/borda\ show.png');
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+    background-image: url('imagens/plano-de-fundo-texturizado-de-concreto-vinheta-amarelo-pastel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+dialog p {
+    font-size: 1.2em;
+}
+
+dialog img {
+    width: 100%;
+    height: auto;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+}
+
+.principal_dialog {
+    display: flex;
+}
+
+.esquerda {
+    width: 50%;
+}
+
+dialog img {
+    border-radius: 20px;
+    margin: 0px auto 20px;
+}
+
+dialog button {
+    border-style: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto 10px;
+}
+
+#monstros {
+    display: grid;
+    grid-template-rows: repeat(5, fit-content);
+    grid-template-columns: repeat(3 , minmax(200px, 1fr));
+}
+
+.grid_monstros {
+    background: #34312F;
+    margin-top: calc(100vh + 200px);
+    padding: 0 5%;
+}
+
+.caixa_produto {
+    color: #580405;
+    margin: 1em;
+    padding: 1em;
+    border-image-slice: 10 10 10 10;
+    border-image-width: 10px 10px 10px 10px;
+    border-image-outset: 10px 10px 10px 10px;
+    border-image-repeat: round round;
+    border-image-source: url('imagens/borda\ show.png');
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+    background-image: url('imagens/plano-de-fundo-texturizado-de-concreto-vinheta-amarelo-pastel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+    transition: all 0.3s;
+}
+
+.caixa_produto:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.caixa_produto img {
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    header img {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    
+    .esquerda {
+        width: 100%;
+    }
+    
+    
+    dialog button {
+        font-size: 2.2em;
+    }
+    
+    .input_search {
+        margin-top: 10%;
+        transform: scale(150%);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .principal_dialog {
+        flex-direction: column;
+    }
+    #monstros {
+        grid-template-columns: repeat(2 , minmax(200px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #monstros {
+        grid-template-columns: repeat(1 , minmax(200px, 1fr));
+    }   
+
+    .input_search {
+        transform: scale(100%);
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .input_search {
+        transform: scale(70%);
+    }
+}

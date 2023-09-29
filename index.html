@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="icon" type="image/favicon" href="estilos/imagens/favicon.ico">
+    <title>RPG Monsters</title>
+</head>
+<body>
+    <script defer src="script.js"></script>
+
+    <header>
+        <img class="icone" src="estilos/imagens/druida.png" alt="logo do site, uma patinha de cachorro com uma espiral no centro">
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Search" required/>
+        </form>
+        <img class="usuario" src="estilos/imagens/usuario.svg" alt="ícone de usuário para acessar informações do usuário">
+    </header>
+
+    <main class="grid_monstros">
+        <p id="loading">Loading...</p>
+        <div id="monstros"></div>
+    </main>
+
+    <dialog>
+        <div class="principal_dialog">
+            <div class="esquerda">
+                <h2>
+                    <span>Name: </span>
+                    <span class="monstro">Loading...</span>
+                    <br>
+                    <span>Type: </span>
+                    <span class="monstroType">Loading...</span>
+                </h2>
+                <hr>
+                <p>
+                    <span class="negrito">Armor Class </span>
+                    <span class="armorClass"></span>
+                    <br>
+                    <span class="negrito">Hit points </span>
+                    <span class="hitPoints"></span>
+                    <br>
+                    <span class="negrito">Speed </span>
+                    <span class="speed"></span>
+                    <hr>
+                    <div class="atributos">
+                        <div class="bloco">
+                            <span class="negrito">STR</span>
+                            <br>
+                            <span class="strength"></span>
+                        </div>
+                        <div class="bloco">
+                            <span class="negrito">DEX</span>
+                            <br>
+                            <span class="dexterity"></span>
+                        </div>
+                        <div class="bloco">
+                            <span class="negrito">CON</span>
+                            <br>
+                            <span class="constitution"></span>
+                        </div>
+                        <div class="bloco">
+                            <span class="negrito">INT</span>
+                            <br>
+                            <span class="intelligence"></span>
+                        </div>
+                        <div class="bloco">
+                            <span class="negrito">WIS</span>
+                            <br>
+                            <span class="wisdom"></span>
+                        </div>
+                        <div class="bloco">
+                            <span class="negrito">CHA</span>
+                            <br>
+                            <span class="charisma"></span>
+                        </div>
+                    </div>
+                </p>
+                <hr>
+                <p>
+                    <span class="negrito">Senses </span>
+                    <span class="senses"></span>
+                    <br>
+                    <span class="negrito">Languages</span>
+                    <span class="languages"></span>
+                    <br>
+                    <span class="negrito">Challenge</span>
+                    <span class="challenge"></span>
+                </p>
+            </div>
+            
+            <div class="direita">
+                <img src="#" alt="monstro" class="monstroImagem" height="350px">
+                <br>
+            </div>
+        </div>
+        <button>Fechar</button>
+    </dialog>
+    
+</body>
+</html>
