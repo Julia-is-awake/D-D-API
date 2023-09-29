@@ -105,12 +105,13 @@ dialog p {
 
 dialog img {
     width: 100%;
-    height: auto;
+    height: 70vh;
 }
 
 .direita {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .principal_dialog {
@@ -173,7 +174,6 @@ dialog button {
 
 .caixa_produto img {
     display: flex;
-    margin: auto;
     border-radius: 20px;
     width: 100%;
 }
@@ -198,6 +198,16 @@ dialog button {
     .input_search {
         margin-top: 10%;
         transform: scale(150%);
+    }
+    
+    dialog img {
+        width: 100%;
+        height: auto;
+    }
+
+    .direita {
+        display: flex;
+        align-items: center;
     }
 }
 
