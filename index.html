@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="icon" type="image/favicon" href="estilos/imagens/favicon.ico">
+    <meta name="author" content="Julia Sorgetz Alves">
+    <meta name="description" content="Site dedicado a mostrar os monstros que se encontram no bestiário de Dungeons and Dragons edição 5">
+    
     <title>RPG Monsters</title>
 </head>
 <body>
     <script defer src="script.js"></script>
 
     <header>
-        <img class="icone" src="estilos/imagens/druida.png" alt="logo do site, uma patinha de cachorro com uma espiral no centro">
+        <!-- <img class="icone" src="estilos/imagens/druida.png" alt="logo do site, uma patinha de cachorro com uma espiral no centro"> -->
         <form class="form">
             <input type="search" class="input_search" placeholder="Search" required/>
         </form>
-        <img class="usuario" src="estilos/imagens/usuario.svg" alt="ícone de usuário para acessar informações do usuário">
+        <!-- <img class="usuario" src="estilos/imagens/usuario.svg" alt="ícone de usuário para acessar informações do usuário"> -->
     </header>
 
-    <main class="grid_monstros">
-        <p id="loading">Loading...</p>
-        <div id="monstros"></div>
-    </main>
+    <div class="juntos">
+        <div class="texto">
+            <h1>MONSTROS!</h1>
+            <p>Escolha o melhor monstro para a sua aventura!</p>
+        </div>
+
+        <div class="imagem">
+            <img src="https://i.pinimg.com/originals/bb/ba/02/bbba02c6b970cd66523f2269358f31d3.png" alt="monstro deformado com tentáculos gritando">
+        </div>
+    </div>
+        
+        <main class="grid_monstros">
+            <p id="loading">Loading...</p>
+            <div id="monstros"></div>
+        </main>
 
     <dialog>
         <div class="principal_dialog">
